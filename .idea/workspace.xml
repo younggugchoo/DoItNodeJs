@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9d9d330-410d-4944-9f62-fa941475a588" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DSC_0079.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Calc3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch02_test6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch02_test7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch03_test14.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test11.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test13.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test15.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch04_test9.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch05_test2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch05_test6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch05_test7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch_03_test16.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/output.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -389,7 +368,7 @@
       <workItem from="1513376881038" duration="29000" />
       <workItem from="1513411684866" duration="16443000" />
       <workItem from="1513521210468" duration="94000" />
-      <workItem from="1513521837450" duration="163000" />
+      <workItem from="1513521837450" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1513313247247</created>
@@ -426,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513521917344</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test">
+      <created>1513522015703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513522015703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23122000" />
+    <option name="totallyTimeSpent" value="23281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-8" width="1868" height="1096" extended-state="6" />
