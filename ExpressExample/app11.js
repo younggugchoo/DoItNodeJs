@@ -21,6 +21,8 @@ var bodyParser = require('body-parser')
 
 var expressErrorHandler = require('express-error-handler');
 
+var cookieParser = require('cookie-parser');
+
 // 익스프레스 객체 생성
 var app = express();
 
@@ -35,25 +37,12 @@ app.use(bodyParser.json())
 
 app.use('/public', static(path.join(__dirname, 'public')));
 
+app.use(cookieParser());
+
+
 
 // 라우터 객체 참조
 var router = express.Router();
-
-// 라우팅 함수 등록
-router.route('/process/login').post(function(req, res) {
-    console.log('/process/login 처리함.');
-
-    var paramId = req.body.id || req.query.id;
-    var paramPassword = req.body.password || req.query.password;
-
-    res.writeHead('200', {'Content-Type':'text/html;charset=utf8'});
-    res.write('<h1>Express 서버에서 응답한 결과입니다.</h1>');
-    res.write('<div><p>Param id : ' + paramId + '</p></div>');
-    res.write('<div><p>Param password : ' + paramPassword + '</p></div>');
-    res.write("<br><br><a href='/public/login.html'>로그인 페이지로 돌아가기</a>");
-    res.end();
-});
-
 
 // 라우팅 함수 등록
 router.route('/process/users/:id').get(function(req, res) {
@@ -63,9 +52,28 @@ router.route('/process/users/:id').get(function(req, res) {
 
 
     res.writeHead('200', {'Content-Type':'text/html;charset=utf8'});
-    res.write('<h1>Express 서버에서 응답한 결과입니다123.</h1>');
+    res.write('<h1>Express 서버에서 응답한 결과입니다.</h1>');
     res.write('<div><p>Param id : ' + paramId + '</p></div>');
     res.end();
+});
+
+
+router.route('/process/showCookie').get(function(req, res){
+   console.log('process/showCookie 호출됨.');
+
+   res.send(req.cookie);
+});
+
+router.route('/process/setUserCookie').get(function(req, res){
+   console.log('/process/setUserCookie 호출됨');
+
+   res.cookie('user', {
+       id:'choo'
+       , name :'소녀시대'
+       , authorize : true
+   });
+
+   res.redirect('/process/showCookie');
 });
 
 
